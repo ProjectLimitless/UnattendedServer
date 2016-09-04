@@ -16,9 +16,9 @@ TODO: Write
 
 ## Tests
 
-The project makes use of Go's built-in testing.
+The project makes use of Codeception testing.
 
-TODO: Add tests more
+TODO: Add tests
 
 ---
 *A part of Project Limitless*

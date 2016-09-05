@@ -15,6 +15,7 @@ return array(
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
+		'application.vendor.*',
 		'application.helpers.*',
 		'application.components.*',
 		'application.extensions.YiiMailer.*',
@@ -49,9 +50,10 @@ return array(
 			'urlFormat'=>'path',
 			'showScriptName' => false,
 			'rules'=>array(
-				'/' => 'site/index',
-				'login' => 'site/login',
+				'/' => 'update/process',
+				'uuid/login' => 'site/login',
 				'logout' => 'site/logout',
+				'manage' => 'manage/index',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
@@ -61,7 +63,7 @@ return array(
 			'packages'=>array(
 				'jquery'=>array(
 					'baseUrl'=>'//ajax.googleapis.com/ajax/libs/jquery/',
-					'js'=>array('2.2.2/jquery.min.js'),
+					'js'=>array('3.1.0/jquery.min.js'),
 				)
 			),
 		),

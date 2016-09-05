@@ -56,62 +56,28 @@ html {
 body {
 }
 
-a {
-	border: none;
-	outline: 0;
-	.transition();
-	text-decoration: none;
-	color: @color-blue-dark;
-
-	&:hover {
-		.transition();
-		color: @color-blue-dark;
-	}
-
-}
-
-a.button {
-	padding: 5px;
-	border: 1px solid @color-blue-dark;
-	color: @color-blue-dark;
-	.border-radius(4px);
-
-	&:hover {
-		border: 1px solid @color-blue-dark;
-		color: @color-blue-dark;
-	}
-
-	@media @phone {
-		display: block;
-	}
-	@media @mini {
-		display: block;
-	}
-}
-
-img {
-	max-width: 100%;
-}
-
-ul {
-	list-style-type: none;
-	font-size: 14px;
-	li {
-		padding-left: 10px;
-	}
-}
-
 p {
 	font-size: 14px;
 }
 
-input {
-	.border-radius(4px);
-	padding: 5px;
-	font-family: @font-main;
-	border: 1px solid transparent;
 
-	&:focus {
-		border: 1px solid @color-blue-dark;
+div.holder {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	&.medium {
+		width: 400px;
+	}
+
+	div.notice {
+		h1 {
+			padding: 10px;
+		}
+	}
+
+	div.login-form {
+		padding: 10px;
 	}
 }

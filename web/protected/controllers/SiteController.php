@@ -42,6 +42,7 @@ class SiteController extends Controller
 	 */
 	public function actionError()
 	{
+		$this->layout='//layouts/login';
 		if($error=Yii::app()->errorHandler->error)
 		{
 			if(Yii::app()->request->isAjaxRequest)
@@ -60,13 +61,6 @@ class SiteController extends Controller
 		$this->pageTitle = 'Login';
 
 		$model=new LoginForm;
-
-		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
 
 		// collect user input data
 		if(isset($_POST['LoginForm']))

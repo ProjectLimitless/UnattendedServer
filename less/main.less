@@ -1,0 +1,117 @@
+// out: ../web/css/main.css, sourcemap: false, compress: true
+/*
+    Core Stylesheet for unattended server
+*/
+
+// Responsive media queries
+@desktop: ~"only screen and (min-width: 940px)"; /* tablet, landscape iPad, lo-res laptops ands desktops */
+@tablet: ~"only screen and (min-width: 640px) and (max-width: 939px)"; /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@medium: ~"only screen and (min-width: 480px) and (max-width: 639px)"; /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@phone: ~"only screen and (min-width: 350px) and (max-width: 479px)"; /* smartphones, iPhone, portrait 480x320 phones */
+@mini: ~"only screen and (max-width: 349px)"; /* Bloody tiny */
+
+/* Used like this
+
+@media @desktop {
+    background-color: green;
+}
+
+@media @tablet {
+    background-color: red;
+}
+
+@media @medium {
+    background-color: blue;
+}
+
+@media @phone {
+    background-color: purple;
+}
+
+@media @mini {
+    background-color: purple;
+}
+*/
+
+@import "reset.less";
+@import "elements.less";
+
+/* Colours */
+@color-white: #FFFFFF;
+@color-white-off: #CBCACC;
+@color-grey: #777777;
+@color-blue-dark: #000044;
+
+/* Fonts */
+@font-main: sans-serif;
+
+/* Sizes */
+
+html {
+	font-family: @font-main;
+	color: @color-grey;
+	background-color: @color-white;
+}
+
+body {
+}
+
+a {
+	border: none;
+	outline: 0;
+	.transition();
+	text-decoration: none;
+	color: @color-blue-dark;
+
+	&:hover {
+		.transition();
+		color: @color-blue-dark;
+	}
+
+}
+
+a.button {
+	padding: 5px;
+	border: 1px solid @color-blue-dark;
+	color: @color-blue-dark;
+	.border-radius(4px);
+
+	&:hover {
+		border: 1px solid @color-blue-dark;
+		color: @color-blue-dark;
+	}
+
+	@media @phone {
+		display: block;
+	}
+	@media @mini {
+		display: block;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	font-size: 14px;
+	li {
+		padding-left: 10px;
+	}
+}
+
+p {
+	font-size: 14px;
+}
+
+input {
+	.border-radius(4px);
+	padding: 5px;
+	font-family: @font-main;
+	border: 1px solid transparent;
+
+	&:focus {
+		border: 1px solid @color-blue-dark;
+	}
+}

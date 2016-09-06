@@ -18,6 +18,7 @@ return array(
 		'application.vendor.*',
 		'application.helpers.*',
 		'application.components.*',
+		'application.components.enums.*',
 		'application.extensions.YiiMailer.*',
 	),
 
@@ -44,7 +45,7 @@ return array(
 		'request'=>array(
 			'class'=>'application.components.HttpRequest',
             'enableCsrfValidation'=>true,
-            'noCsrfValidationRoutes'=>array(),
+            'noCsrfValidationRoutes'=>array('update/process'),
         ),
 		'urlManager'=>array(
 			'urlFormat'=>'path',

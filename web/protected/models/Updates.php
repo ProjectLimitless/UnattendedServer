@@ -70,7 +70,7 @@ class Updates extends CActiveRecord
 			'download_location' => 'Download Location',
 			'size_in_bytes' => 'Size In Bytes',
 			'sha256_hash' => 'Sha256 Hash',
-			'date_created' => 'Date Created',
+			'date_created' => 'Added',
 			'date_updated' => 'Date Updated',
 			'is_active' => 'Is Active',
 		);
@@ -103,7 +103,9 @@ class Updates extends CActiveRecord
 		$criteria->compare('sha256_hash',$this->sha256_hash,true);
 		$criteria->compare('date_created',$this->date_created,true);
 		$criteria->compare('date_updated',$this->date_updated,true);
-		$criteria->compare('is_active',$this->is_active);
+		$criteria->compare('is_active',1);
+
+		$criteria->order = 'id DESC';
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

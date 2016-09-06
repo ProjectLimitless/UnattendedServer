@@ -2,8 +2,7 @@
 SQLyog Community v12.2.2 (64 bit)
 MySQL - 10.0.25-MariaDB-0ubuntu0.16.04.1 : Database - unattended
 *********************************************************************
-*/
-
+*/
 
 /*!40101 SET NAMES utf8 */;
 
@@ -27,13 +26,12 @@ CREATE TABLE `updates` (
   `download_location` varchar(1024) COLLATE utf8_unicode_ci NOT NULL,
   `size_in_bytes` int(11) unsigned NOT NULL,
   `sha256_hash` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `upgraded` int(11) unsigned DEFAULT '0',
   `date_created` datetime NOT NULL,
   `date_updated` datetime NOT NULL,
   `is_active` tinyint(1) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-/*Data for the table `updates` */
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Table structure for table `users` */
 
@@ -49,8 +47,6 @@ CREATE TABLE `users` (
   `date_created` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-/*Data for the table `users` */
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

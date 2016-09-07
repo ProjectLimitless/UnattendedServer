@@ -11,6 +11,11 @@
                     'value' => '$data->app_id',
                 ),
                 array(
+                    'name' => 'track',
+                    'type' => 'raw',
+                    'value' => '$data->track',
+                ),
+                array(
                     'name' => 'version',
                     'type' => 'raw',
                     'value' => '$data->version',

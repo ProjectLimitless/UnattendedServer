@@ -19,6 +19,7 @@ return array(
 		'application.helpers.*',
 		'application.components.*',
 		'application.components.enums.*',
+		'application.components.structs.*',
 		'application.extensions.YiiMailer.*',
 	),
 
@@ -99,5 +100,6 @@ return array(
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
+		'UPDATE_SERVER' => 'unattendedserver.local'
 	),
 );

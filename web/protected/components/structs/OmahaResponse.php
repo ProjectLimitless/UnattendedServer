@@ -57,9 +57,9 @@ EOT;
             $result = <<<EOT
 <?xml version="1.0" encoding="UTF-8"?>
 <response protocol="$this->Protocol" server="$this->Server">
-    <app appid="$this->AppID" status="$this->Status" trace="$this->TraceID">
+    <app appid="$this->AppID" status="$this->Status">
         <updatecheck status="ok">
-            <manifest version="$this->Version">
+            <manifest version="$this->Version" trace="$this->TraceID">
                 <url codebase="$this->DownloadUrl"></url>
                 <package hash="$this->SHA256Hash" name="$this->Filename" size="$this->SizeBytes"></package>
             </manifest>

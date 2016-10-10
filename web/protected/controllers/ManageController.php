@@ -14,7 +14,7 @@ class ManageController extends Controller
     {
 		return array(
 	    		array('allow',
-	   				'actions'=>array('index', 'delete'),
+	   				'actions'=>array('index', 'create', 'delete'),
 	 				'users'=>array('@'),
 	   			),
 	    		array('deny',
@@ -24,8 +24,7 @@ class ManageController extends Controller
     }
 
 	/**
-	 * This is the default 'index' action that is invoked
-	 * when an action is not explicitly requested by users.
+	 * List the available updates
 	 */
 	public function actionIndex()
 	{
@@ -41,6 +40,43 @@ class ManageController extends Controller
 		));
 	}
 
+	/**
+	 * Create a new update
+	 */
+	public function actionCreate()
+	{
+		$model = new Updates('create');
+
+		if (Yii::app()->request->isPostRequest)
+		{
+			if (isset($_POST['Updates']))
+			{
+				$model->attributes = $_POST['Updates'];
+				$model->date_created = new CDbExpression('NOW()');
+
+				$version = $_POST['Updates_major'] . '.' . $_POST['Updates_minor'] . '.';
+				$version .= $_POST['Updates_patch'] . '.' . $_POST['Updates_build'];
+				$model->version = $version;
+
+				if ($model->save())
+				{
+					Yii::app()->user->setFlash('ok', 'Update published');
+					$this->redirect(array('manage/index'));
+				}
+			}
+		}
+
+		$this->pageTitle = 'Create Update';
+		$this->render('create', array(
+			'model' => $model
+		));
+	}
+
+
+	/**
+	 * Delete an update
+	 * @param  int $id The ID of the update to delete
+	 */
 	public function actionDelete($id)
 	{
 		$model = Updates::model()->findByPk($id, 'is_active = 1');

@@ -33,16 +33,18 @@ class Updates extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('app_id, filename, download_location, size_in_bytes, sha256_hash, date_created, date_updated', 'required'),
+			array('app_id, track, filename, download_location, size_in_bytes, sha256_hash, date_created', 'required', 'on' => 'create'),
+			array('app_id, track, filename, download_location, size_in_bytes, sha256_hash, date_updated', 'required', 'on' => 'update'),
 			array('is_active', 'numerical', 'integerOnly'=>true),
 			array('app_id, sha256_hash', 'length', 'max'=>128),
-			array('version', 'length', 'max'=>32),
+			array('version, track', 'length', 'max'=>32),
 			array('filename', 'length', 'max'=>64),
 			array('download_location', 'length', 'max'=>1024),
 			array('size_in_bytes', 'length', 'max'=>11),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, app_id, version, filename, download_location, size_in_bytes, sha256_hash, date_created, date_updated, is_active', 'safe', 'on'=>'search'),
+
 		);
 	}
 

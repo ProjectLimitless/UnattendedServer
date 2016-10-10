@@ -4209,3 +4209,548 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/novus/SampleLibrary.novus
 ---
+2016/10/10 21:19:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "login". in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(141): CWebApplication->runController('login')
+#1 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/login
+---
+2016/10/10 21:30:25 [error] [exception.ParseError] ParseError: syntax error, unexpected 'array' (T_ARRAY), expecting ',' or ')' in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/views/layouts/main.php:44
+Stack trace:
+#0 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/donovan/D...', Array, true)
+#1 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CController.php(784): CBaseController->renderFile('/home/donovan/D...', Array, true)
+#2 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php(39): CController->render('index', Array)
+#3 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/actions/CInlineAction.php(49): ManageController->actionIndex()
+#4 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(141): CWebApplication->runController('manage/index')
+#14 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php(16): CApplication->run()
+#16 {main}
+REQUEST_URI=/manage
+---
+2016/10/10 22:06:56 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:06:56 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:06:56 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:06:56 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:06:56 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:07:19 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:07:19 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:07:19 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:07:19 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:07:19 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:16 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:16 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:16 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:16 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:16 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:27 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:27 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:27 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:27 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:27 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:40 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:40 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:40 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:40 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:08:40 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:13 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:13 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:13 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:13 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:13 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:23 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:23 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:23 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:23 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:23 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:41 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:41 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:41 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:41 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:09:41 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:10:37 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:10:37 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:10:37 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:10:37 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:10:37 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (55)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:13 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:13 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:13 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:13 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:13 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:19 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:19 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:19 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:19 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:19 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:40 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:40 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:40 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:40 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:11:40 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:19 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:19 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:19 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:19 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:19 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:23 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:23 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:23 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:23 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:23 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:33 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:33 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:33 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:33 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:33 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:52 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:52 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:52 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:52 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:12:52 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:10 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:10 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:10 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:10 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:10 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:19 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:19 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:19 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:19 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:19 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:33 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:33 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:33 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:33 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:33 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:44 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:44 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:44 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:44 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:13:44 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:14:07 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:14:07 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:14:07 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:14:07 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:14:07 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:12 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:12 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:12 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:12 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:12 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:18 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:18 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:18 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:18 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:18 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:47 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:47 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:47 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:47 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:15:47 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:17 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:17 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:17 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:17 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:17 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:21 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:21 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:21 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:21 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:21 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:37 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:37 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:37 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:37 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:37 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:49 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:49 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:49 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:49 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:17:49 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:18:15 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:18:15 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:18:15 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:18:15 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:18:15 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:19:41 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:19:41 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:19:41 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:19:41 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:19:41 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:19:59 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:19:59 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:19:59 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:19:59 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:19:59 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:20:19 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:20:19 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:20:19 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:20:19 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:20:19 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:25:47 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:25:47 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:25:47 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:25:47 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:25:47 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:27:38 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:27:38 [warning] [application] Failed to set unsafe attribute "major" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:27:38 [warning] [application] Failed to set unsafe attribute "minor" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:27:38 [warning] [application] Failed to set unsafe attribute "patch" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:27:38 [warning] [application] Failed to set unsafe attribute "build" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:29:24 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)
+2016/10/10 22:29:32 [warning] [application] Failed to set unsafe attribute "track" of "Updates".
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/protected/controllers/ManageController.php (54)
+in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php (16)

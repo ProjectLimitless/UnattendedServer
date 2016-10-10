@@ -1,5 +1,10 @@
 <div class="container-fluid">
     <h2>Current Updates</h2>
+    <?php if (Yii::app()->user->hasFlash('ok')): ?>
+        <p class="bg-success">
+            <?php echo Yii::app()->user->getFlash('ok') ?>
+        </p>
+    <?php endif ?>
     <?php
     $this->widget('zii.widgets.grid.CGridView', array(
             'dataProvider' => $model->search(),

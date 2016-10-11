@@ -2,9 +2,6 @@
 
 /**
  * General helper functions
- *
- * @author Donovan Solms <donovan.solms@gmail.com>
- *
  */
 class GeneralHelper
 {
@@ -77,5 +74,17 @@ class GeneralHelper
 			$token .= $pool[$crypto_rand_secure( 0, $max )];
 		}
 		return $token;
+	}
+
+	/**
+	* Blowfish hashes the password
+	* @param string $password The password to hash
+	*/
+	public static function hashPassword($password)
+	{
+		$options = array(
+			'cost' => Yii::app()->params['BCRYPT_COST'],
+		);
+		return password_hash($password, PASSWORD_BCRYPT, $options);
 	}
 }

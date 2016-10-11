@@ -26,9 +26,9 @@
                     'value' => '$data->version',
                 ),
                 array(
-                    'name' => 'upgraded',
+                    'name' => 'upgrade_count',
                     'type' => 'raw',
-                    'value' => '$data->upgraded',
+                    'value' => '$data->upgrade_count',
                 ),
                 array(
                     'name' => 'date_created',

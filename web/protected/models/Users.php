@@ -29,7 +29,8 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('email, password, first_name, last_name, date_created', 'required'),
+			array('email, password, first_name, last_name, date_created', 'required', 'on' => 'create'),
+			array('email, first_name, last_name', 'required', 'on' => 'update'),
 			array('email', 'length', 'max'=>255),
 			array('password', 'length', 'max'=>1024),
 			array('first_name, last_name', 'length', 'max'=>32),
@@ -61,6 +62,7 @@ class Users extends CActiveRecord
 			'password' => 'Password',
 			'first_name' => 'First Name',
 			'last_name' => 'Last Name',
+			'ga_secret' => 'Google Authenticator Code',
 			'date_created' => 'Date Created',
 		);
 	}

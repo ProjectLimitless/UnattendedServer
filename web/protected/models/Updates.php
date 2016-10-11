@@ -35,7 +35,7 @@ class Updates extends CActiveRecord
 		return array(
 			array('app_id, track, filename, download_location, size_in_bytes, sha256_hash, date_created', 'required', 'on' => 'create'),
 			array('app_id, track, filename, download_location, size_in_bytes, sha256_hash, date_updated', 'required', 'on' => 'update'),
-			array('is_active', 'numerical', 'integerOnly'=>true),
+			array('is_active, upgrade_count', 'numerical', 'integerOnly'=>true),
 			array('app_id, sha256_hash', 'length', 'max'=>128),
 			array('version, track', 'length', 'max'=>32),
 			array('filename', 'length', 'max'=>64),
@@ -43,7 +43,7 @@ class Updates extends CActiveRecord
 			array('size_in_bytes', 'length', 'max'=>11),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, app_id, version, filename, download_location, size_in_bytes, sha256_hash, date_created, date_updated, is_active', 'safe', 'on'=>'search'),
+			array('id, app_id, version, filename, download_location, size_in_bytes, sha256_hash, upgrade_count, version, date_created, date_updated, is_active', 'safe', 'on'=>'search'),
 
 		);
 	}
@@ -72,6 +72,7 @@ class Updates extends CActiveRecord
 			'download_location' => 'Download Location',
 			'size_in_bytes' => 'Size In Bytes',
 			'sha256_hash' => 'Sha256 Hash',
+			'upgrade_count' => 'Total Upgrades',
 			'date_created' => 'Added',
 			'date_updated' => 'Date Updated',
 			'is_active' => 'Is Active',
@@ -103,14 +104,19 @@ class Updates extends CActiveRecord
 		$criteria->compare('download_location',$this->download_location,true);
 		$criteria->compare('size_in_bytes',$this->size_in_bytes,true);
 		$criteria->compare('sha256_hash',$this->sha256_hash,true);
+		$criteria->compare('version',$this->version,true);
 		$criteria->compare('date_created',$this->date_created,true);
 		$criteria->compare('date_updated',$this->date_updated,true);
 		$criteria->compare('is_active',1);
 
-		$criteria->order = 'id DESC';
-
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+			'pagination' => array(
+				'pageSize' => Yii::app()->params['PAGE_SIZE']
+			),
+			'sort' => array(
+				'defaultOrder' => 'id DESC',
+			)
 		));
 	}
 

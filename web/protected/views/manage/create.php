@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container narrow">
     <h2>Create Update</h2>
     <div class="panel panel-default">
         <div class="panel-body">

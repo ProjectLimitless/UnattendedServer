@@ -6,6 +6,8 @@ A simple PHP, Yii-based server for [Unattended](https://github.com/ProjectLimitl
 
 TODO: Write
 
+**Note: Google Authenticator for Two-Factor Authentication is forced since a malicious user could push dangerous updates.**
+
 ### Linux
 
 TODO: Write

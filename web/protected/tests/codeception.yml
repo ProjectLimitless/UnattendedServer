@@ -23,5 +23,5 @@ modules:
         PhpBrowser:
             url: http://localhost:8234
         Yii1:
-            appPath: ../../test.php
+            appPath: web/test.php
             url: http://localhost:8234/test.php

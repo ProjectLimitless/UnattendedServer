@@ -21,8 +21,7 @@ install:
 
 # Execute tests
 script:
-  - cd web/protected/tests
-  - php codecept.phar run unit --no-interaction
+  - php codecept.phar run unit -c ./web/protected/tests/ --no-interaction
 
 branches:
   only: master

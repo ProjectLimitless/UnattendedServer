@@ -4,6 +4,10 @@ return CMap::mergeArray(
 	require(dirname(__FILE__).'/main.php'),
 	array(
 		'components'=>array(
+			'request' => array(
+                'class' => 'CodeceptionHttpRequest',
+				'noCsrfValidationRoutes'=>array('update/process')
+            ),
 			'fixture'=>array(
 				'class'=>'system.test.CDbFixtureManager',
 			),

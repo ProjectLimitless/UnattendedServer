@@ -1,4 +1,9 @@
 <div class="holder medium">
+	<?php if (Yii::app()->user->hasFlash('ok')): ?>
+		<div class="alert-success errorSummary">
+			<?php echo Yii::app()->user->getFlash('ok'); ?>
+		</div>
+	<?php endif; ?>
 	<div class="title">
 		<h1>Login</h1>
 	</div>

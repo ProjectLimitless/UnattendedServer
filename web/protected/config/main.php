@@ -43,20 +43,14 @@ return array(
 			'showScriptName' => false,
 			'rules'=>array(
 				'/' => 'update/process',
-				'uuid/login' => 'site/login',
+				'login' => 'site/login',
 				'logout' => 'site/logout',
 				'manage' => 'manage/index',
+				'install' => 'install/install',
+				'install/<step:\d+>' => 'install/install',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
-		),
-		'clientScript'=>array(
-			'packages'=>array(
-				'jquery'=>array(
-					'baseUrl'=>'//ajax.googleapis.com/ajax/libs/jquery/',
-					'js'=>array('3.1.0/jquery.min.js'),
-				)
 			),
 		),
 		'db'=>array(

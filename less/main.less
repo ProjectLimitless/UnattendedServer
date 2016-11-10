@@ -79,6 +79,10 @@ div.holder {
 	margin-right: auto;
 	text-align: center;
 
+	&.top {
+		margin-top: 20px;
+	}
+
 	&.medium {
 		width: 400px;
 	}
@@ -89,8 +93,18 @@ div.holder {
 		}
 	}
 
-	div.login-form {
+	div.login-form,
+	div.install-form {
 		padding: 10px;
+	}
+
+	div.installer {
+		&.instructions {
+
+			li {
+				text-align: left;
+			}
+		}
 	}
 }
 

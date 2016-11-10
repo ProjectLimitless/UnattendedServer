@@ -4,23 +4,11 @@ A simple PHP, Yii-based server for [Unattended](https://github.com/ProjectLimitl
 
 ## Getting Started
 
-TODO: Write
-
-**Note: Google Authenticator for Two-Factor Authentication is forced since a malicious user could push dangerous updates.**
-
-### Linux
-
-TODO: Write
-
-### Windows
-
-TODO: Write
+Available at [the Project Limitless Documentation site](https://docs.projectlimitless.io/unattended-server).
 
 ## Tests
 
 The project makes use of Codeception testing.
-
-TODO: Add tests
 
 ---
 *A part of Project Limitless*

@@ -1,6 +1,6 @@
 /*
 SQLyog Community v12.2.6 (64 bit)
-MySQL - 10.1.18-MariaDB : Database - unattended
+MySQL - 10.1.19-MariaDB : Database - unattended
 *********************************************************************
 */
 
@@ -32,16 +32,9 @@ CREATE TABLE `update_log` (
   `trace_id` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   `date_created` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=134 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `update_log` */
-
-insert  into `update_log`(`id`,`event_type`,`event_result`,`app_id`,`track`,`current_version`,`update_version`,`bootid`,`trace_id`,`date_created`) values 
-(1,1,7,'limitless.core','stable','0.0.1.0','0.0.2.0','demo','demo-6YwroQGp0klsQZ7FdW9l9THKGTLz2yz1','2016-09-08 15:19:32'),
-(2,1,7,'limitless.core','stable','0.0.1.0','0.0.2.0','demo','demo-cKrOdAZ0MSuba1vLs1mtYdhFJfkeyyT7','2016-09-08 15:24:19'),
-(3,1,7,'limitless.core','stable','0.0.1.0','0.0.2.0','demo','demo-fhdddTNaAXazPVOcJxsAUAruyHA1HviF','2016-09-08 15:25:08'),
-(4,1,7,'limitless.core','stable','0.0.1.0','0.0.2.0','demo','demo-mrUyhntcuxzYyYSF4QZr5vhdrjSai5KL','2016-09-08 15:25:30'),
-(5,1,7,'limitless.core','stable','0.0.1.0','0.0.2.0','demo','demo-cSlb6cKBZQ8xUrVdszpeYXICv85DAw62','2016-09-12 22:21:20');
 
 /*Table structure for table `updates` */
 
@@ -61,14 +54,12 @@ CREATE TABLE `updates` (
   `date_updated` datetime NOT NULL,
   `is_active` tinyint(1) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `updates` */
 
 insert  into `updates`(`id`,`app_id`,`track`,`version`,`filename`,`download_location`,`size_in_bytes`,`sha256_hash`,`upgrade_count`,`date_created`,`date_updated`,`is_active`) values 
-(1,'limitless.core','stable','0.0.1','core.gz','http://unattendedserver.local/core.gz',1234567,'sadsd',0,'2016-09-06 20:56:23','2016-09-06 20:56:26',1),
-(2,'limitless.core','stable','0.0.2.0','limitless.core.v0.0.2.0.zip','http://unattendedserver.local/packages/limitless.core.v0.0.2.0.zip',372,'84acea72bf10939d07904e1d0e6d4985e7ed13fdcecd7aa525ac196a00f4836d',0,'2016-09-06 20:56:23','2016-09-06 20:56:26',1),
-(3,'app.test','beta','1.0.0.0','app.tar.gz','http://www.dl.com',2001931,'sidauoehfkajd',0,'2016-10-11 20:33:55','0000-00-00 00:00:00',1);
+(1,'limitless.core','stable','1.0.0.1','sampleapp.v1.0.0.1.zip','http://unattendedserver.local/packages/sampleapp.v1.0.0.1.zip',2522,'4fc21f834edfe576babd0f9e9eb0fe2327af9c256d7209550c9757c5e7efc47a',0,'2016-09-06 20:56:23','2016-09-06 20:56:26',1);
 
 /*Table structure for table `users` */
 
@@ -88,7 +79,7 @@ CREATE TABLE `users` (
 /*Data for the table `users` */
 
 insert  into `users`(`id`,`email`,`password`,`first_name`,`last_name`,`ga_secret`,`date_created`) values 
-(1,'donovan.solms@gmail.com','$2y$12$aczlHY1/HACRdjp9aPXwcuB7d4r8y7evpDcxpaSZTc9jltCbx7Oi2','Donovan','Solms','Y3KY43YGCTND72UJ','2016-09-05 21:42:42');
+(1,'admin@example.com','','Unattended','Admin','','2016-09-05 21:42:42');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

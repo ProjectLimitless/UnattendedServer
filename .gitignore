@@ -11,3 +11,4 @@ web/protected/runtime/*
 !web/protected/runtime/.gitignore
 web/protected/data/*.db
 web/themes/classic/views/
+*.log

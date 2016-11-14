@@ -1,5 +1,7 @@
 # Unattended Server
 
+[![Badger](https://www.projectlimitless.io/badger/unattended-server/badge)](https://www.projectlimitless.io/badger/unattended-server)
+
 A simple PHP, Yii-based server for [Unattended](https://github.com/ProjectLimitless/Unattended) updates.
 
 ## Getting Started

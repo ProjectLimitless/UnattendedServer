@@ -5510,3 +5510,67 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/js/material.min.js.map
 ---
+2016/11/10 14:58:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/ripples.min.js.map". in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(141): CWebApplication->runController('js/ripples.min....')
+#1 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/ripples.min.js.map
+---
+2016/11/10 14:58:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/material.min.js.map". in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(141): CWebApplication->runController('js/material.min...')
+#1 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/material.min.js.map
+---
+2016/11/10 14:59:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/ripples.min.js.map". in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(141): CWebApplication->runController('js/ripples.min....')
+#1 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/ripples.min.js.map
+---
+2016/11/10 14:59:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/material.min.js.map". in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(141): CWebApplication->runController('js/material.min...')
+#1 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/material.min.js.map
+---
+2016/11/10 14:59:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/ripples.min.js.map". in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(141): CWebApplication->runController('js/ripples.min....')
+#1 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/ripples.min.js.map
+---
+2016/11/10 14:59:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/material.min.js.map". in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(141): CWebApplication->runController('js/material.min...')
+#1 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/material.min.js.map
+---
+2016/11/10 15:00:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/ripples.min.js.map". in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(141): CWebApplication->runController('js/ripples.min....')
+#1 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/ripples.min.js.map
+---
+2016/11/10 15:00:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/material.min.js.map". in /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/web/CWebApplication.php(141): CWebApplication->runController('js/material.min...')
+#1 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/donovan/Development/project-limitless/Limitless.UnattendedServer/web/index.php(16): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/material.min.js.map
+---

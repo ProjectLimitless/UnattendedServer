@@ -4,13 +4,9 @@
 
 A simple PHP, Yii-based server for [Unattended](https://github.com/ProjectLimitless/Unattended) updates.
 
-## Getting Started
+## Documentation and Getting Started Guide
 
-Available at [the Project Limitless Documentation site](https://docs.projectlimitless.io/unattended-server).
-
-## Tests
-
-The project makes use of Codeception testing.
+Available at the [Project Limitless Documentation site](https://docs.projectlimitless.io/unattended-server).
 
 ---
 *A part of Project Limitless*
